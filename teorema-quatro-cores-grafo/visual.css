@@ -1,0 +1,174 @@
+body {
+  background-color: #000;
+  margin: auto;
+  width: 800px;
+  position: relative;
+}
+h1{
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  margin: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  animation: slidein 1s;
+}
+
+
+.btn {
+  border: none;
+  border-radius: 6px;
+  color: rgb(14, 14, 14);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  padding: 15px 32px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+  margin: 8px
+}
+.btn-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-container p{
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.teorema-class{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.bloco{
+  margin-left: 20px;
+  width: 8px;
+  height: 30px;
+  background-color: white;
+}
+.amarelo{
+  background-color: rgb(255, 236, 0);
+}
+.verde{
+  background-color: rgb(54, 226, 29);
+}
+.vermelho{
+  background-color: rgb(236, 74, 93);
+}
+.azul{
+  background-color: rgb(80, 186, 241);
+}
+.btn:hover {
+  background-color: #7d807d;
+  color: white;
+}
+
+.btn__accept {
+  background-color: #ffffff;
+}
+
+.btn__cancel {
+  background-color: #989c99;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateX(110px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slidein2 {
+  from {
+    opacity: 0;
+    transform: translateX(-110px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+svg {
+  background-color: #FFFFFF;
+  background-image: url('brasil.png');
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  animation: slidein2 1s;
+}
+ 
+svg:not(.active):not(.ctrl) {
+  cursor: crosshair;
+}
+ 
+path.aresta {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  cursor: default;
+}
+
+g text{
+  color: white !important;
+}
+ 
+svg:not(.active):not(.ctrl) path.aresta {
+  cursor: pointer;
+}
+ 
+path.aresta.selected {
+  stroke-dasharray: 10,2;
+}
+ 
+path.aresta.dragline {
+  pointer-events: none;
+}
+ 
+path.aresta.hidden {
+  stroke-width: 0;
+}
+ 
+circle.vertice {
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+text {
+  font: 12px sans-serif;
+  pointer-events: none;
+}
+ 
+text.contadorVizinhos {
+  color: white !important;
+  padding: 5px;
+  text-anchor: middle;
+  font-weight: bold;
+}
+
+.text-nomes{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.text-nomes p{
+  color: black;
+}

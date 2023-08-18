@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trabalho de grafos</title>
+    <link rel="stylesheet" href="visual.css">
+  </head>
+  
+  <body>
+    <h1 > Trabalho de grafos </h1>
+
+    <div class="btn-container">
+
+      <div style="display: flex;">
+        <button class="btn btn__accept" onclick="iniciar()">
+          Iniciar
+        </button>
+  
+  
+        <button class="btn btn__cancel"  onclick="reiniciar()">
+          Resetar
+        </button>
+      </div>
+
+      <div class="teorema-class">
+        <p> Teorema das quatro cores. </p>
+
+        <div class="bloco azul"></div>
+        <div class="bloco vermelho"></div>
+        <div class="bloco amarelo"></div>
+        <div class="bloco verde"></div>
+      </div>
+     
+    </div>
+  </body>
+ 
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="dados.js"></script>
+  <script src="visual.js"></script>
+</html>
